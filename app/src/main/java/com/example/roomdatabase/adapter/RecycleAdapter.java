@@ -21,7 +21,9 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
     public RecycleAdapter(Context mContext, List<Mahasiswa> albumList) {
         this.mContext = mContext;
         this.myList = albumList;
+
     }
+
 
     @NonNull
     @Override
@@ -39,6 +41,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
         myViewHolder.tvNim.setText(album.getNim());
         myViewHolder.tvKejuruan.setText(album.getKejuruan());
         myViewHolder.tvAlamat.setText(album.getAlamat());
+
     }
 
     @Override
@@ -60,6 +63,8 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
             tvNama = itemView.findViewById(R.id.tvNama);
         }
     }
+
+
 
 
 }
